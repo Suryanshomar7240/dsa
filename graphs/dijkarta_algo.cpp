@@ -10,6 +10,7 @@ using namespace std;
 //*******************************************************
 //                    Question
 // finding cost for traverseing from source node
+//algo fails when negative edege occur
 //*******************************************************
 
 //*******************************************************
@@ -20,7 +21,6 @@ int main()
     int n, m;
     cin >> n >> m;
     vector<vector<pair<int, int>>> adj(n);
-    vector<vector<int>> edges;
     const int inf = 1e9;
     vector<int> dis(n, inf);
     int u, v, w;
