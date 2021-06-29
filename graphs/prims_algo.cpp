@@ -9,7 +9,7 @@ typedef long long ll;
 using namespace std;
 //*******************************************************
 //                    Question
-// finding cost for traverseing from source node
+//           Minimum spanning tree
 //*******************************************************
 
 //*******************************************************
@@ -31,21 +31,12 @@ int main()
         adj[u].push_back({v, w});
         adj[v].push_back({u, w});
     }
-    // for(auto i:adj)
-    // {
-    //     for(auto j:i)
-    //     {
-    //         cout<<j.first<<" "<<j.second<<" | ";
-    //     }
-    //     cout<<endl;
-    // }
     int source;
     cin >> source;
     dis[source] = 0;
     set<pair<int, int>> s;
     // {wt, node}
     s.insert({0, source});
-    // visited[source]=true;
     int cost = 0;
     while (!s.empty())
     {
