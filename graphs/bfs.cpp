@@ -7,7 +7,7 @@ typedef long long ll;
 #define rrep(i, a, b) for (int i = b; i >= a; i--)
 #define error(x) cout << x << " ";
 using namespace std;
-
+cp
 //*******************************************************
 // Type your code here for each test case
 //*******************************************************
