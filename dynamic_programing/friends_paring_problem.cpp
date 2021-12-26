@@ -11,7 +11,7 @@ using namespace std;
 // //***********************************************************************************
 //                        Question
 // //***********************************************************************************
-//there areN friends 
+//there are N friends 
 // A friend can be single or can be paired
 //find no of ways it can be done
 const int N=1e5+7;
@@ -24,6 +24,8 @@ int main()
     int n;
     cin>>n;
     dp[0]=1;
+    stack<int> q;
+    q.empty();
     dp[1]=1;
     for(int i=2;i<=n;i++)
     {
